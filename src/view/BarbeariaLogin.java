@@ -1,21 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package view;
 
-/**
- *
- * @author dougl
- */
-public class BarbeariaLogin extends javax.swing.JFrame {
+import controller.LoginController;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 
-    /**
-     * Creates new form BarbeariaLogin
-     */
+public class BarbeariaLogin extends javax.swing.JFrame {
+    
+    private final LoginController controller;
+    
     public BarbeariaLogin() {
         initComponents();
+        controller = new LoginController(this);
     }
 
     /**
@@ -75,10 +71,7 @@ public class BarbeariaLogin extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -115,4 +108,27 @@ public class BarbeariaLogin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
+
+    public void exibirMensagem(String oi_) {
+        JOptionPane.showMessageDialog(null,oi_);
+    }
+
+    public JLabel getjLabel1() {
+        return jLabel1;
+    }
+
+    public void setjLabel1(JLabel jLabel1) {
+        this.jLabel1 = jLabel1;
+    }
+
+    public JPanel getjPanel1() {
+        return jPanel1;
+    }
+
+    public void setjPanel1(JPanel jPanel1) {
+        this.jPanel1 = jPanel1;
+    }
+    
+    
+    
 }
