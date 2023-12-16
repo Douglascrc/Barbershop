@@ -25,11 +25,11 @@ public class Agendamento {
         this.valor = valor;
     }
 
-    public Agendamento(int id, Cliente cliente, Servico servico, Date data, float valor) {
+    public Agendamento(int id, Cliente cliente, Servico servico, float valor, String data) throws ParseException {
         this.id = id;
         this.cliente = cliente;
         this.servico = servico;
-        this.data = data;
+        this.data = new SimpleDateFormat("dd/mm/yyyy HH:mm").parse(data);
         this.valor = valor;
     }
 
