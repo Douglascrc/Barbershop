@@ -1,10 +1,14 @@
 
 package controller;
 
+import model.DAO.ClienteDAO;
+import model.DAO.ServicoDAO;
 import controller.Helper.AgendaHelper;
 import java.util.ArrayList;
 import model.Agendamento;
+import model.Cliente;
 import model.DAO.AgendamentoDAO;
+import model.Servico;
 import view.Agenda;
 
 public class AgendaController {
@@ -25,11 +29,17 @@ public class AgendaController {
     }
 
     public void atualizaClientes() {
+        ClienteDAO clienteDao = new ClienteDAO();
+        ArrayList<Cliente> clientes = clienteDao.selectAll();
         
+        helper.PreencherCliente(clientes);
     }
 
-    public void atualizaServicos() {
+    public void atualizaServico() {
+       ServicoDAO servicoDao = new ServicoDAO();
+       ArrayList<Servico> servicos = servicoDao.selectAll();
        
+       helper.PreencherServicos(servicos);
     }
 
     public void agendar() {
@@ -37,7 +47,8 @@ public class AgendaController {
     }
 
     public void atualizaValor() {
-        
+        Servico servico = helper.obterServico();
+        helper.setarValor(servico.getValor());
     }
     
     
