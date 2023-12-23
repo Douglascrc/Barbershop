@@ -46,5 +46,10 @@ public class Servico {
         this.nome = nome;
     }
     
+    @Override
+    public String toString(){
+        return getNome();
+    }
+    
 }
 

@@ -48,9 +48,9 @@ public class Banco {
         Servico servico5 = new Servico(5, "Sombrancelhas", 10);
         Servico servico6 = new Servico(6, "Penteados", 3);
 
-        Agendamento agendamento1 = new Agendamento(1, cliente1, servico2, 30, "14/07/2018");
-        Agendamento agendamento2 = new Agendamento(2, cliente3, servico4, 40, "14/07/2018");
-        Agendamento agendamento3 = new Agendamento(3, cliente4, servico1, 18, "14/07/2018");
+        Agendamento agendamento1 = new Agendamento(1, cliente1, servico2, 30, "14/07/2018 9:30");
+        Agendamento agendamento2 = new Agendamento(2, cliente3, servico4, 40, "14/07/2018 11:00");
+        Agendamento agendamento3 = new Agendamento(3, cliente4, servico1, 18, "14/07/2018 10:30");
         
         //Adiciona Elementos na lista
         usuario.add(usuario1);
