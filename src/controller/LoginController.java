@@ -1,24 +1,36 @@
 
 package controller;
 
-import view.BarbeariaLogin;
+import model.DAO.UsuarioDAO;
+import controller.Helper.LoginHelper;
+import model.Usuario;
+import view.Login;
+import view.MenuPrincipal;
+
 
 public class LoginController {
 
-    private BarbeariaLogin view; 
+    private final Login view;
+    private final LoginHelper helper;
     
-    public LoginController(BarbeariaLogin view) {
-        this.view = view;       
+    public LoginController(Login view) {
+        this.view = view;
+        this.helper = new LoginHelper(view);
     }
-    
-    public void fizTarefa() {
-        System.out.println("Buscando...");
-        
-        this.view.exibirMensagem("Oi ");
-    }
-    
     
     public void entrarSistema(){
+        Usuario usuario = helper.obterModelo();
+        
+        UsuarioDAO usuarioDao = new UsuarioDAO();
+        Usuario usuarioAutenticado = usuarioDao.selectPorNomeESenha(usuario);
+        
+        if(usuarioAutenticado != null) {
+            MenuPrincipal menu = new MenuPrincipal();
+            menu.setVisible(true);
+            this.view.dispose();
+        } else {
+            view.exibirMensagem("Usuário ou senha invalídos");
+        }
         
     }
     

@@ -8,11 +8,12 @@ public class Usuario extends Pessoa {
     private String senha;
     private String nivelAcesso;
 
-    public Usuario(int id, String nome) {
+    public Usuario(int id, String nome,String senha) {
         super(id, nome);
+        this.senha = senha;
     }
 
-    public Usuario(String senha, String nivelAcesso, int id, String nome, String dataNascimento, String telefone, String email, char sexo) throws ParseException {
+    public Usuario(int id,String nome,   String dataNascimento, String telefone, String email, char sexo,String senha,String nivelAcesso) throws ParseException {
         super(id, nome, dataNascimento, telefone, email, sexo);
         this.senha = senha;
         this.nivelAcesso = nivelAcesso;

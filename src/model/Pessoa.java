@@ -17,7 +17,7 @@ abstract public class Pessoa {
     public Pessoa(int id, String nome, String dataNascimento, String telefone, String email, char sexo) throws ParseException {
         this.id = id;
         this.nome = nome;
-        this.dataNascimento = new SimpleDateFormat("dd/mm/yyyy HH:mm").parse(dataNascimento);
+        this.dataNascimento = new SimpleDateFormat("dd/mm/yyyy").parse(dataNascimento);
         this.telefone = telefone;
         this.email = email;
         this.sexo = sexo;

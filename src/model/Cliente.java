@@ -15,7 +15,7 @@ public class Cliente extends Pessoa {
         this.endereco = endereco;
     }
 
-    public Cliente(int id, String nome, char sexo, String dataNascimento, String endereco,   String telefone, String email) throws ParseException {
+    public Cliente(int id, String nome, char sexo, String dataNascimento, String email, String telefone, String endereco) throws ParseException {
         super(id, nome, dataNascimento, telefone, email, sexo);
         this.endereco = endereco;
     }
