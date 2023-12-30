@@ -20,7 +20,7 @@ public class Agendamento {
         this.id = id;
         this.cliente = cliente;
         this.servico = servico;
-        this.data = new SimpleDateFormat("dd/mm/yyyy HH:mm").parse(data);  
+        this.data = new SimpleDateFormat("dd/mm/yyyy").parse(data);  
         this.observacao = observacao;
         this.valor = valor;
     }
@@ -70,7 +70,7 @@ public class Agendamento {
     }
     
     public String getHoraFormatado(){
-        return new SimpleDateFormat("HH:mm").format(data);
+        return new SimpleDateFormat("hh:mm").format(data);
     }
 
 

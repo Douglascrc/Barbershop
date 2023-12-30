@@ -3,15 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/dougl/Documents/projetos/BarberShop/src/controller/AgendaController.java</file>
+            <file>file:/C:/Users/dougl/Documents/projetos/BarberShop/src/controller/Helper/AgendaHelper.java</file>
+            <file>file:/C:/Users/dougl/Documents/projetos/BarberShop/src/controller/MenuController.java</file>
+            <file>file:/C:/Users/dougl/Documents/projetos/BarberShop/src/controller/Helper/IHelper.java</file>
+            <file>file:/C:/Users/dougl/Documents/projetos/BarberShop/src/model/Agendamento.java</file>
             <file>file:/C:/Users/dougl/Documents/projetos/BarberShop/src/controller/Helper/LoginHelper.java</file>
-            <file>file:/C:/Users/dougl/Documents/projetos/BarberShop/src/controller/LoginController.java</file>
-            <file>file:/C:/Users/dougl/Documents/projetos/BarberShop/src/view/Login.java</file>
-            <file>file:/C:/Users/dougl/Documents/projetos/BarberShop/src/view/MenuPrincipal.java</file>
-            <file>file:/C:/Users/dougl/Documents/projetos/BarberShop/src/model/Usuario.java</file>
+            <file>file:/C:/Users/dougl/Documents/projetos/BarberShop/src/view/Agenda.java</file>
             <file>file:/C:/Users/dougl/Documents/projetos/BarberShop/src/model/DAO/Banco.java</file>
-            <file>file:/C:/Users/dougl/Documents/projetos/BarberShop/src/model/Pessoa.java</file>
-            <file>file:/C:/Users/dougl/Documents/projetos/BarberShop/src/model/DAO/UsuarioDAO.java</file>
-            <file>file:/C:/Users/dougl/Documents/projetos/BarberShop/src/model/Cliente.java</file>
         </group>
     </open-files>
 </project-private>
